@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kiran Jadhav | SDET</title>
   <meta name="description" content="Kiran Jadhav — SDET with 4 years of experience in UI & API automation testing, Selenium, Pytest, TestNG, CI/CD, and Agile delivery." />
+  <meta name="theme-color" content="#070b1a" />
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kiran Jadhav | SDET" />
+  <meta property="og:description" content="SDET specializing in UI & API automation, CI/CD, and quality engineering." />
+  <meta property="og:image" content="profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="profile.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +34,11 @@
       <span class="brand-text">Kiran Jadhav</span>
       <span class="brand-role">SDET</span>
     </div>
-    <nav class="nav" aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="#home">Home</a>
       <a href="#summary">Summary</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
@@ -38,7 +52,7 @@
 
 <main id="content">
   <!-- HERO -->
-  <section class="hero section" id="contact">
+  <section class="hero section" id="home">
     <div class="hero-grid">
       <div class="hero-copy">
         <h1 class="glow">Kiran Jadhav</h1>
@@ -47,7 +61,7 @@
         <ul class="meta" aria-label="Contact details">
           <li><a href="mailto:ijkiranp@gmail.com">ijkiranp@gmail.com</a></li>
           <li><a href="tel:+917032174014">+91 7032174014</a></li>
-          <li>BE — Automobile</li>
+          <li>India · Open to opportunities</li>
         </ul>
 
         <div class="actions">
@@ -64,7 +78,7 @@
       </div>
 
       <figure class="hero-media">
-        <img class="avatar" src="profile.jpg" alt="Profile photo of Kiran Jadhav" width="320" height="320" loading="eager" />
+        <img class="avatar" src="profile.jpg" alt="Profile photo of Kiran Jadhav" width="320" height="320" loading="eager" decoding="async" />
         <figcaption class="sr-only">Profile photo</figcaption>
       </figure>
     </div>
@@ -75,10 +89,9 @@
     <h2>Professional Summary</h2>
     <div class="card">
       <p>
-        B.E. graduate with close to 4 years of experience in UI and API automation and manual testing, specializing in writing
-        Selenium scripts, object-oriented programming, and debugging code. With over 240 problems solved on LeetCode and a 5-star
-        rating on HackerRank, I am a quick learner with strong analytical and problem-solving skills, capable of mastering any
-        technology. I am eager to contribute to and grow within a dynamic organization.
+        SDET with ~4 years of experience building reliable UI and API automation, improving CI pipelines, and shipping quality in
+        Agile teams. Comfortable with Selenium/Pytest/TestNG, CI/CD (Jenkins/GitLab), and end-to-end ownership: test strategy,
+        automation, execution, defect triage, and release readiness.
       </p>
 
       <div class="highlights" aria-label="Key highlights">
@@ -254,17 +267,19 @@
         <h3 class="card-title">Destiny (Bluehost.com)</h3>
         <div class="card-sub">Hosting control panel · cPanel replacement</div>
       </header>
+      <div class="chips chips-compact" aria-label="Tech stack">
+        <span class="chip">Python</span>
+        <span class="chip">Pytest</span>
+        <span class="chip">Selenium</span>
+        <span class="chip">Postman</span>
+        <span class="chip">Jenkins</span>
+        <span class="chip">GitLab CI</span>
+      </div>
       <ul class="bullets">
-        <li>Destiny is replacement of cPanel which was a powerful, web-based graphical interface that allows users to manage various aspects of their web hosting account and website.</li>
-        <li>In a Bluehost project, Destiny (OCI) is a user-friendly control panel that helps you manage your website and hosting account easily.</li>
-        <li>You can upload and organize files, create and manage email accounts, and add domains or subdomains. It also allows quick installation of applications like WordPress to build your site.</li>
-        <li>For backend needs, you can create and manage databases, check usage reports such as bandwidth or visitor data, and customize PHP settings for better performance.</li>
-        <li>Destiny also provides security tools like SSH access and IP blocking to keep your site safe. While Bluehost manages the hosting servers, Destiny gives you full control over your website’s content, settings, and functionality—all in one place when you log in to your account.</li>
-        <li>Configured and managed DNS records (A, MX, CNAME, TXT) to ensure smooth website and email functionality.</li>
-        <li>Streamlined SSL certificate installation and management for secure HTTPS connections.</li>
-        <li>Automated application deployments (e.g., WordPress, Joomla) via Destiny’s one-click installer to reduce setup time.</li>
-        <li>Managed cron jobs and scheduled tasks directly from Destiny to automate routine operations.</li>
-        <li>Optimized website performance by configuring caching, PHP versions, and limits through Destiny settings.</li>
+        <li><strong>Scope:</strong> UI + API regression for a new hosting control panel replacing cPanel.</li>
+        <li><strong>Automation:</strong> Created/maintained 250+ UI tests and 100+ API tests to raise coverage and catch regressions early.</li>
+        <li><strong>CI/CD:</strong> Improved pipeline reliability and reduced total execution time by ~40% through better orchestration and prioritization.</li>
+        <li><strong>Quality:</strong> Partnered with dev + PO, triaged defects, and supported releases with clear test reporting.</li>
       </ul>
     </article>
 
@@ -273,16 +288,17 @@
         <h3 class="card-title">Web Trading Client</h3>
         <div class="card-sub">Sports trading · Risk management · Real-time odds</div>
       </header>
+      <div class="chips chips-compact" aria-label="Tech stack">
+        <span class="chip">C#</span>
+        <span class="chip">Selenium</span>
+        <span class="chip">BDD</span>
+        <span class="chip">API testing</span>
+        <span class="chip">GitLab CI</span>
+      </div>
       <ul class="bullets">
-        <li>The Web Trading Client is a comprehensive application designed for various sports trading, including horse racing, greyhound racing, football, and more.</li>
-        <li>This application serves as the foundation for traders to create and manage fixtures (events) where they can add markets (incidents) and participants (such as horses) for users to place bets on.</li>
-        <li>Key features of the application include the ability to modify odds, stakes, betting limits, and stake units.</li>
-        <li>Traders can also apply stop-loss settings and combine multiple bets at both the market and participant levels.</li>
-        <li>The application supports both manual and automatic payout options based on the event outcomes.</li>
-        <li>Once a fixture is created and configured, it becomes available on the BWIN app, allowing customers to place their bets seamlessly.</li>
-        <li>Integrated real-time odds updates and synchronization to ensure traders and customers always see the latest market data.</li>
-        <li>Designed and managed trading rules and risk management features (e.g., exposure limits, liability control) to safeguard profitability.</li>
-        <li>Implemented market suspension and resumption features to handle edge cases like abandoned matches or sudden events.</li>
+        <li><strong>Scope:</strong> End-to-end testing for a trading client used to create fixtures/markets and manage odds in real time.</li>
+        <li><strong>Automation:</strong> Built BDD-style UI automation for critical trader workflows (odds changes, limits, stop-loss).</li>
+        <li><strong>Reliability:</strong> Added regression coverage for market suspension/resumption and payout edge cases.</li>
       </ul>
     </article>
 
@@ -291,12 +307,17 @@
         <h3 class="card-title">SBI Banking Application (TCS Bancs 24)</h3>
         <div class="card-sub">Core banking · CIF · RTGS/NEFT/POS · Teller operations</div>
       </header>
+      <div class="chips chips-compact" aria-label="Focus areas">
+        <span class="chip">Manual testing</span>
+        <span class="chip">Functional testing</span>
+        <span class="chip">Regression</span>
+        <span class="chip">JIRA</span>
+        <span class="chip">Banking domain</span>
+      </div>
       <ul class="bullets">
-        <li>This application is a critical tool used by employees of the State Bank of India (SBI), including clerks, cashiers, managers, and other authorized personnel. The application facilitates the management of customer accounts and financial transactions within the bank.</li>
-        <li>Employees can create and manage Personal and Non-Personal Customer Identification Files (CIFs) and set up various account types, such as Savings Bank (SB), Current Account (CA), Cash Credit Overdraft (CCOD), Recurring Deposit (RD), Fixed Deposit (FD), and Loan accounts.</li>
-        <li>The application supports a wide range of financial transactions, including Real-Time Gross Settlement (RTGS), National Electronic Funds Transfer (NEFT), Point of Sale (POS) transactions, E-Commerce payments, and ATM operations.</li>
-        <li>Provides essential banking services like passbook printing, mini statements, balance inquiries, cash withdrawals, and cash deposits.</li>
-        <li>This application is integral to the daily operations of SBI, ensuring smooth and efficient banking services for customers across the country.</li>
+        <li><strong>Scope:</strong> Core banking workflows (CIF, account creation, teller operations, RTGS/NEFT/POS transactions).</li>
+        <li><strong>Testing:</strong> Designed test cases, executed regression cycles, and reported defects with clear steps and impact.</li>
+        <li><strong>Quality:</strong> Validated critical flows with a focus on correctness, auditability, and edge-case handling.</li>
       </ul>
     </article>
 
@@ -305,13 +326,17 @@
         <h3 class="card-title">Internet Banking Application</h3>
         <div class="card-sub">Customer portal · Account services · Maven + TestNG automation</div>
       </header>
+      <div class="chips chips-compact" aria-label="Tech stack">
+        <span class="chip">Java</span>
+        <span class="chip">Selenium</span>
+        <span class="chip">TestNG</span>
+        <span class="chip">Maven</span>
+        <span class="chip">POM</span>
+      </div>
       <ul class="bullets">
-        <li>The Internet Banking Application is a comprehensive platform designed to provide individual customers with secure access to their banking information and services.</li>
-        <li>Enables customers to log in and view their account summaries, account statements, and transaction histories.</li>
-        <li>Customers can perform operations such as requesting cheque books, placing and removing stops on cheques, and inquiring about their login and TDS history.</li>
-        <li>As part of the project, I was responsible for creating a Maven-based automation framework to ensure the reliability and efficiency of the application.</li>
-        <li>I automated all possible test cases using TestNG, validating critical functionalities like account management, transaction processing, and customer service requests.</li>
-        <li>The automation framework streamlined the testing process, ensuring the application functions as intended across different scenarios and reducing the risk of defects in production.</li>
+        <li><strong>Automation:</strong> Built a Maven + TestNG framework with Page Object Model for stable UI automation.</li>
+        <li><strong>Coverage:</strong> Automated key customer flows (login, account summary, statements, service requests) and reduced manual regression effort.</li>
+        <li><strong>Maintainability:</strong> Standardized locators, utilities, and reporting to keep tests readable and scalable.</li>
       </ul>
     </article>
   </section>
@@ -341,6 +366,38 @@
         <li>Java (Basic) certificate — HackerRank — <a href="https://www.hackerrank.com/certificates/697694a3e9c1" target="_blank" rel="noreferrer noopener">Certificate</a></li>
         <li>Problem Solving (Basic) certificate — HackerRank — <a href="https://www.hackerrank.com/certificates/e3555f0cfe2c" target="_blank" rel="noreferrer noopener">Certificate</a></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card contact-card">
+      <p class="contact-lede">
+        If you’re hiring for SDET / QA Automation roles, I’d love to connect. I respond fast and can share work samples on request.
+      </p>
+      <div class="contact-grid" aria-label="Contact methods">
+        <a class="contact-item" href="mailto:ijkiranp@gmail.com">
+          <span class="contact-k">Email</span>
+          <span class="contact-v">ijkiranp@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+917032174014">
+          <span class="contact-k">Phone</span>
+          <span class="contact-v">+91 7032174014</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/kiran-jadhav-981650120/" target="_blank" rel="noreferrer noopener">
+          <span class="contact-k">LinkedIn</span>
+          <span class="contact-v">Message me</span>
+        </a>
+        <a class="contact-item" href="Kiran_Resume_SDET.pdf" download>
+          <span class="contact-k">Resume</span>
+          <span class="contact-v">Download PDF</span>
+        </a>
+      </div>
+      <div class="actions">
+        <a class="button primary" href="mailto:ijkiranp@gmail.com?subject=SDET%20Opportunity%20-%20Kiran%20Jadhav">Email me</a>
+        <a class="button" href="#projects">View projects</a>
+      </div>
     </div>
   </section>
 
